@@ -1,0 +1,22 @@
+{
+  "name": "udemy-course-1",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Qtrixnet/udemy-JS-base.git"
+  },
+  "author": "Kirill Shashichev",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Qtrixnet/udemy-JS-base/issues"
+  },
+  "homepage": "https://github.com/Qtrixnet/udemy-JS-base#readme",
+  "devDependencies": {
+    "json-server": "^0.16.2"
+  }
+}
