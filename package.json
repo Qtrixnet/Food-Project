@@ -18,5 +18,8 @@
   "homepage": "https://github.com/Qtrixnet/udemy-JS-base#readme",
   "devDependencies": {
     "json-server": "^0.16.2"
+  },
+  "dependencies": {
+    "jshint": "^2.12.0"
   }
 }
