@@ -17,7 +17,9 @@
   },
   "homepage": "https://github.com/Qtrixnet/udemy-JS-base#readme",
   "devDependencies": {
-    "json-server": "^0.16.2"
+    "json-server": "^0.16.3",
+    "webpack": "^5.5.0",
+    "webpack-cli": "^4.2.0"
   },
   "dependencies": {
     "jshint": "^2.12.0"
