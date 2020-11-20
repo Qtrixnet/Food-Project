@@ -32,25 +32,27 @@ a {
   background-color: #fff;
   font-size: 18px;
   font-weight: 700;
-  border: 1px solid rgba(0, 0, 0, 0.2);
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  border: 0;
+  box-shadow: 0 0 70px rgba(0, 0, 0, 0.1);
   cursor: pointer;
   transition: 0.3s all;
   outline: 0;
+  border-radius: 10px;
 }
 .btn_white {
   background-color: #fff;
 }
 .btn_dark {
-  background-color: #303030;
-  color: #fff;
+  background: lightgray;
+  color: black;
   border: none;
+  box-shadow: 0 0 70px rgba(0, 0, 0, 0.1);
 }
 .btn_min {
   height: 50px;
 }
 .btn:hover {
-  box-shadow: 0 4px 30px #e94f4f83;
+  box-shadow: 0 0px 70px #e94f4f83;
   background-color: #e94f4f;
   color: white;
 }
@@ -70,18 +72,30 @@ a {
 }
 .header {
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-end;
   align-items: center;
   height: 150px;
   padding: 0 100px;
 }
+
 .header__left-block {
   display: flex;
   justify-content: space-between;
   min-width: 550px;
+  position: fixed;
+  top: 5%;
+  left: 5%;
+  background-color: white;
+  box-shadow: 0 0 70px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  opacity: .8;
+  padding: 10px;
+  z-index: 9999;
 }
+
 .header__logo {
   max-width: 170px;
+  margin-right: 50px;
 }
 .header__logo img {
   width: 100%;
@@ -127,7 +141,10 @@ a {
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  background-color: rgba(255, 255, 255, .5);
+  background-color: rgb(255, 255, 255);
+  box-shadow: 0 0 70px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  opacity: .8;
   padding: 17px;
 }
 .sidepanel__text {
@@ -154,6 +171,7 @@ a {
 .preview {
   padding: 28px 0 100px 0;
   position: relative;
+  
 }
 .preview__life {
   font-weight: 700;
@@ -167,14 +185,14 @@ a {
   top: -155px;
   width: 50vw;
   height: 900px;
-  background: #303030;
+  background: lightgray;
+  border-radius: 10px;
   z-index: -1;
 }
 .tabcontainer {
   display: flex;
   width: 1130px;
   margin: 0 auto;
-  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.25);
 }
 .tabcontent {
   width: 850px;
@@ -184,6 +202,7 @@ a {
   width: 100%;
   height: 100%;
   object-fit: cover;
+  border-radius: 10px 0 0 10px;
 }
 .tabcontent__descr {
   position: absolute;
@@ -191,17 +210,20 @@ a {
   right: -177px;
   width: 550px;
   height: 359px;
-  background: #000000d3;
+  background: #ffffffd3;
+  box-shadow: 0 0 70px rgba(0, 0, 0, 0.1);
   padding: 50px;
   font-size: 24px;
   font-weight: 300;
   line-height: 36px;
-  color: rgba(255, 255, 255);
+  color: rgb(0, 0, 0);
+  border-radius: 10px;
 }
 .tabheader {
   width: 280px;
   padding: 35px 30px;
   background-color: #fff;
+  border-radius: 0px 10px 10px 0;
 }
 .tabheader h3 {
   font-weight: 700;
@@ -241,20 +263,21 @@ a {
   position: absolute;
   width: 1109px;
   height: 780px;
-  background: #303030;
+  /* background: #303030; */
+  background: lightgray;
+  border-radius: 10px;
   z-index: -1;
   top: 50px;
 }
 .offer__text {
   width: 580px;
-  color: white;
+  color: black;
 }
 .offer__descr {
   font-size: 18px;
   margin-top: 30px;
   font-weight: 300;
   line-height: 24px;
-  
 }
 .offer__action {
   display: flex;
@@ -264,7 +287,7 @@ a {
 .offer__advantages {
   width: 330px;
   margin-top: 50px;
-  color: white;
+  color: black;
 }
 .offer__advantages h2 {
   font-weight: 700;
@@ -300,6 +323,7 @@ a {
   margin-top: 15px;
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.25);
   overflow: hidden;
+  border-radius: 10px;
 }
 .offer__slider-inner {
   display: flex;
@@ -328,6 +352,7 @@ a {
 .offer__slide {
   width: 100%;
   height: 390px;
+  border-radius: 10px;
 }
 .offer__slide img {
   width: 100%;
@@ -343,7 +368,8 @@ a {
 .calculating__field {
   width: 100%;
   margin-top: 50px;
-  background: #303030;
+  background: lightgray;
+  border-radius: 10px;
   padding: 30px 0 40px 0;
 }
 .calculating__subtitle {
@@ -351,7 +377,7 @@ a {
   font-size: 18px;
   font-weight: 700;
   margin-top: 30px;
-  color: white;
+  color: black;
 }
 .calculating__subtitle:first-child {
   margin-top: 0;
@@ -380,6 +406,7 @@ a {
   height: 50px;
   padding: 0 10px;
   background: #fff;
+  border-radius: 10px;
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
   border: none;
   text-align: center;
@@ -421,7 +448,7 @@ a {
 .calculating__result {
   font-size: 18px;
   font-weight: 700;
-  color: white;
+  color: black;
 }
 .calculating__result span {
   font-size: 30px;
@@ -442,7 +469,7 @@ a {
   margin-top: 50px;
   padding: 50px 0;
   width: 100%;
-  background:#303030;
+  background:lightgray;
 }
 .menu__item {
   width: 320px;
@@ -507,7 +534,7 @@ a {
   width: 280px;
   height: 50px;
   background: #fff;
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 0px 70px rgba(0, 0, 0, 0.1);
   border: none;
   font-size: 18px;
   padding: 0 20px;
@@ -524,14 +551,15 @@ a {
   position: absolute;
   width: 50%;
   height: 499px;
-  background: #303030;
+  background:lightgray;
   z-index: -1;
   top: -50px;
   left: 0;
+  border-radius: 10px;
 }
 .promotion__text {
   width: 50%;
-  color: white;
+  color: black;
 }
 .promotion__descr {
   margin-top: 40px;
@@ -560,10 +588,11 @@ a {
   width: 102px;
   height: 120px;
   background: #fff;
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.25);
+  box-shadow: 0 0px 70px rgba(0, 0, 0, 0.1);
   font-size: 16px;
   font-weight: 300;
   text-align: center;
+  border-radius: 10px;
 }
 .promotion__timer .timer__block span {
   display: block;
@@ -572,17 +601,17 @@ a {
   font-size: 56px;
   font-weight: 700;
 }
+
 .footer {
   min-height: 180px;
-  background-color: #303030;
+  background-color: lightgray;
   padding: 45px 0 50px 0;
-  color: #fff;
+  color: black;
 }
 .footer .container {
   height: 100%;
   display: flex;
   justify-content: space-between;
-  align-items: flex-end;
 }
 .footer .subtitle {
   font-size: 20px;
@@ -591,7 +620,7 @@ a {
   display: block;
   margin-top: 15px;
   font-size: 16px;
-  color: #fff;
+  color: black;
 }
 .footer .call {
   text-align: right;
@@ -600,7 +629,7 @@ a {
   position: fixed;
   top: 0;
   left: 0;
-  z-index: 1050;
+  z-index: 10000;
   display: none;
   justify-content: center;
   align-items: center;
@@ -620,6 +649,7 @@ a {
   border: 1px solid rgba(0, 0, 0, 0.2);
   max-height: 80vh;
   overflow-y: auto;
+  border-radius: 10px;
 }
 .modal__close {
   position: absolute;
@@ -647,7 +677,8 @@ a {
   width: 280px;
   height: 50px;
   background: #fff;
-  box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 0px 70px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
   border: none;
   font-size: 18px;
   padding: 0 20px;
@@ -667,8 +698,4 @@ a {
 .fade {
     animation-name: fade;
     animation-duration: .5s;
-}
-
-@media screen and (max-width: 1100px) {
-
 }
