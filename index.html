@@ -13,15 +13,15 @@
           <img src="icons/logo.svg" alt="Логотип" />
         </div>
         <nav class="header__links">
-          <a href="#" class="header__link">Стиль питания</a>
-          <a href="#" class="header__link">Предложения</a>
-          <a href="#" class="header__link">Калькулятор</a>
-          <a href="#" class="header__link">Меню</a>
-          <a href="#" class="header__link">Акция</a>
+          <a href="#style" class="header__link">Стиль питания</a>
+          <a href="#offers" class="header__link">Предложения</a>
+          <a href="#calc" class="header__link">Калькулятор</a>
+          <a href="#menu" class="header__link">Меню</a>
+          <a href="#stock" class="header__link">Акция</a>
         </nav>
       </div>
       <div class="header__right-block">
-        <button data-modal class="btn btn_white">Связаться с нами</button>
+        <button data-modal class="btn btn_light">Связаться с нами</button>
       </div>
     </header>
     <div class="sidepanel">
@@ -34,9 +34,10 @@
         <img src="icons/facebook.svg" alt="facebook" />
       </a>
     </div>
+    <a class="up-button" href="#">Наверх</a>
 
     <div class="preview">
-      <div class="bgc_blue"></div>
+      <div class="bgc_menu"></div>
       <div class="container">
         <div class="tabcontainer">
           <div class="tabcontent">
@@ -74,7 +75,7 @@
             </div>
           </div>
           <div class="tabheader">
-            <h3>Выберите стиль питания</h3>
+            <h3 id="style">Выберите стиль питания</h3>
             <div class="tabheader__items">
               <div class="tabheader__item tabheader__item_active">Фитнес</div>
               <div class="tabheader__item">Премиум</div>
@@ -90,10 +91,10 @@
     <!-- <div class="divider"></div> -->
 
     <div class="offer">
-      <div class="bgc_y"></div>
+      <div class="bgc_offer"></div>
       <div class="container">
         <div class="offer__text">
-          <h2 class="title">Что мы можем вам предложить?</h2>
+          <h2 id="offers" class="title">Что мы можем вам предложить?</h2>
           <div class="offer__descr">
             Наша основная идея - это правильное питание. Оно может быть простым
             и вкусным. Мы не просто доставка, мы сервис! Мы взяли на себя все
@@ -156,7 +157,7 @@
 
     <div class="calculating">
       <div class="container">
-        <h2 class="title">Рассчитаем вашу потребность в калориях?</h2>
+        <h2 id="calc" class="title">Рассчитаем вашу потребность в калориях?</h2>
         <div class="calculating__field">
           <div class="calculating__subtitle">Ваш пол</div>
           <div class="calculating__choose" id="gender">
@@ -226,7 +227,7 @@
     <!-- <div class="divider"></div> -->
 
     <div class="menu">
-      <h2 class="title">Наше меню на день</h2>
+      <h2 id="menu" class="title">Наше меню на день</h2>
 
       <div class="menu__field">
         <div class="container"></div>
@@ -260,10 +261,10 @@
     <!-- <div class="divider"></div> -->
 
     <div class="promotion">
-      <div class="bgc_y"></div>
+      <div class="bgc_promo"></div>
       <div class="container">
         <div class="promotion__text">
-          <div class="title">Акция для новых клиентов!</div>
+          <div id="stock" class="title">Акция для новых клиентов!</div>
           <div class="promotion__descr">
             Мы ценим каждого клиента и предлагаем вам стать одним из них на
             очень выгодных условиях. Каждому, кто закажет доставку питание на
