@@ -373,7 +373,7 @@ a {
 .offer__slider #current {
   font-size: 48px;
   font-weight: 700;
-  color: var(--accent-color);
+  color: var(--light-color);
 }
 .offer__slide {
   width: 100%;
