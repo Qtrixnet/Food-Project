@@ -6,6 +6,6 @@
 + HTML5
 + CCS3
 + JavaScript (стандарт ES6)
-+ Gulp
++ Webpack
 + Animate CSS
 + Slick slider
